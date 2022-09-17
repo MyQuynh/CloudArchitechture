@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Quynh's Website</title>
+</head>
+<body>
+    <!--Font style-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSheet2.css" />
+    <header>
+        <button class="nav-toggle" arial-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav navbar-inverse bg-inverse">
+            <ul class="nav-list">
+                <li>
+                    <a href="#personal" class="nav-link">Personal Information</a>
+                </li>
+                <li>
+                    <a href="#interest" class="nav-link">Interest in IT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Personal Inrtoduction-->
+    <section class="personal" id="personal">
+        <div class="type-write section-title-interest">
+            <h1 data-text="Hello, I am My Quynh" id="title1">
+                Hello, let me introduce myself
+            </h1>
+            <ul class="section-subtitle">
+                <li><strong>Name:</strong> Ngo My Quynh</li>
+                <li><strong>Nickname:</strong> Lam</li>
+                <li><strong>Date of Birth:</strong> 11/11/2001</li>
+                <li><strong>Student Number:</strong> s3836322</li>
+                <li><strong>Email Address:</strong> s3836322@rmit.edu.vn</li>
+                <li><strong>Your major:</strong> Informative Technologies</li>
+                <li><strong>Your programming skills:</strong> Python, Java, scala</li>
+                <li><strong>Nationality:</strong> Vietnam</li>
+                <li><strong>Spoken language:</strong> Vietnamese and English</li>
+                <li><strong>Fun Fact:</strong> My brother used to call me "Quan" which means <br />trousers in Vietnamese because my name has a similar pronunciation</li>
+            </ul>
+        </div>
+        <p class="section--intro">
+
+        </p>
+
+        <img class="cicrle-ava" alt="myava" src="image\ava.jpg" />
+    </section>
+    <!--Interest in IT-->
+    <section class="interest" id="interest">
+        <h1 class="section-title-interest">My Interest</h1>
+        <hr class="line" />
+        <div class="grid-container">
+            <div class="grid-item1">
+                <!--Interest to IT-->
+                <h1 class="text-center text-h1">What is my interest in IT ?</h1>
+                <p class="text-center">At the age of 18, I was unsure about my life, my career and also my future. I didn’t know what I was going to be : a scientist, a doctor, a businesswoman and so on. At that time, the school had many activities relative to career objectives and they sent me a paper to choose which program that I wanted to participate in. I thought I made a huge mistake because I wanted to join an Engineer Program. However,  it turned out to be an IT program. A huge mistake but also a brightess choice. After that, I enrolled in many classes learning about Python, Algorithm and found myself interested in Artificial Intelligence. The motivation behind this is my mom spends an hour doing the housework.Therefore, my aim is creating the robot to do the chores for my mom. Furthermore, although I am interested in A.I, I want to explore and learn different aspects of IT as much as I can from web developer to security and hacking.</p>
+            </div>
+            <div class="grid-item1">
+                <!--Choose RMIT-->
+                <h1 class="text-center text-h1">Why did I choose RMIT ?</h1>
+                <p class="text-center">There are 3 main reasons why I choose to study at RMIT. First of all, I really love the international environment of this school because I can improve my English skills, it makes me feel more confident when I communicate with foreign people. Moreover, maybe I can learn more and more languages, which is very helpful for me. For example, I will know who is cursing me though they do not use English. Secondly, RMIT Vietnam tuition fee is cheaper than studying abroad but I still have the same knowledge as RMIT Australia. Finally, studying at RMIT, I will have more time to improve my practical skills by doing group assignments and totally focus on my major because I do not have to learn unnecessary subjects like philosophy like studying at other schools.</p>
+            </div>
+            <div class="grid-item1">
+                <!--Expectation-->
+                <h1 class="text-center text-h1">What do I expect to learn ?</h1>
+                <p class="text-center">Firstly, my top priority is learning to program because I want to have a beautiful code that would help my teammates a lot for understanding. Secondly, machine learning could be one subject that I should study because this kind of subject can help me have a foundation knowledge of AI. After that, I think learning about security is very important. Everything will have both sides and AI is also if I cannot prevent hackers, it would become dangerous not only for me but also for other people. Finally, it is necessary to study mobile software in Android and iOS because it can support AI and mobile software tend to become more and more developed in the future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p class="text-center">Written code by Quynh</p>
+    </footer>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            })
+        })
+
+    </script>
+</body>
+</html>
